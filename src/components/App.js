@@ -43,10 +43,10 @@ class App extends Component {
     });
 
     return (
-      <div className="App">
+      <div className="App container-fluid">
         <Jumbotron />
         <Form value={ this.state.value } pilot={ this.state.pilot } handleInput={ this._handleInput } handleSubmit={ this._handleSubmit }/>
-        { vehicles }
+        <div className='row'>{ vehicles }</div>
       </div>
     );
   }
